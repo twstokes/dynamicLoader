@@ -14,7 +14,7 @@ By default the plugin expects four image sizes (that follow the Bootstrap breakp
 **To use:**
 
 1. A version of the image should be created for each size: e.g. image-xs.jpg through image-lg.jpg
-2. Add a special class to all images you want dynamic (this example uses adaptive-image)
+2. Add a special class to all images you want dynamic (this example uses .adaptive-image)
 3. Set the src-basename and src-ext attributes
 
 <pre><code>
