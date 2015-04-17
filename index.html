@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Image Load</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <img src-basename="images/car" src-ext=".jpg" class="img-responsive adaptive-image">
+      </div>
+    </div>
+    <img src-basename="images/car" src-ext=".jpg" class="img-responsive adaptive-image">
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/dynamic_load.js"></script>
+<script type="text/javascript">
+
+    // plugin options
+    /*
+    $.fn.dynamicLoader.defaults.minWidths = {
+      "lg" : 1200,
+      "md" : 992,
+      "sm" : 768,
+      "xs" : 0
+    }*/
+
+    // process our images on load
+    $(document).ready(function() {
+      $('img.adaptive-image').dynamicLoader();
+    });
+
+    // process our images on a resize
+    $(window).resize(function() {
+       $('img.adaptive-image').dynamicLoader();
+    });
+
+</script>
+</html>
