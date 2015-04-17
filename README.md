@@ -1,6 +1,8 @@
 # dynamicLoader
 Responsive Design Dynamic Loader experiment
 
+[Demo](http://labs.tannr.com/projects/bootstrap-adaptive/)
+
 A simple jQuery plugin to dynamically load images based on responsive screen size. The idea is that smaller screens should load lower res images to reduce bandwidth.
 
 By default the plugin expects four image sizes (that follow the Bootstrap breakpoints):
