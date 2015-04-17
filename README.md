@@ -31,9 +31,9 @@ By default the plugin expects four image sizes (that follow the Bootstrap breakp
       $('img.adaptive-image').dynamicLoader();
   });</code></pre>
   
-  Notes:
-  *Resizing on a large screen is inefficient
-  *A new HTTP request happens on each image replacement
-  *If a connection is slow, the image will be replaced once the new one is loaded
-  *A task runner could be put into place to load the specified image sizes and batch process images
+  ***Notes:***
+  * Resizing on a large screen is inefficient
+  * A new HTTP request happens on each image replacement
+  * If a connection is slow, the image will be replaced once the new one is loaded
+  * A task runner could be put into place to load the specified image sizes and batch process images
   
